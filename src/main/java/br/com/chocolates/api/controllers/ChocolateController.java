@@ -9,9 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.chocolates.api.enums.TipoChocolate;
 import br.com.chocolates.api.services.ChocolateService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 
 @RestController
 @RequestMapping("/chocolates")
+@Tag(name = "open-api")
 public class ChocolateController {
 
 	@Autowired
